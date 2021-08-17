@@ -1,16 +1,23 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import '../App.css';
 import ChatZone from './ChatZone';
 import ContactWindow from './ContactWindow';
 import InputZone from './InputZone';
 
-const CommunicationZone = () => {
+const CommunicationZone = ({ propState, updateChat }) => {
   const [state, setState] = React.useState({
     value: '',
     disposable: '',
     history: ['How can I help?'],
   });
   const stateRef = React.useRef(state);
+
+  useEffect(() => {
+    if (!!propState.history) {
+      setState({ value: '', disposable: '', ...propState })
+    }
+  }, [propState])
+
 
   function handleChange(event) {
     setState({
@@ -31,8 +38,11 @@ const CommunicationZone = () => {
       stateRef.current = newState;
 
       setTimeout(dialogueEngine, 3000);
+
+      updateChat(state)
     }
     cleanHistory();
+
   }
 
   function dialogueEngine() {
