@@ -18,10 +18,8 @@ const NavigationZone = () => {
     const updateChat = (state) => {
         let newChat = chats
         newChat[chatIndex].state = state
-
         setChats(newChat)
     }
-
 
 
     return <div className="chatWrapper">
