@@ -2,7 +2,7 @@ import React from 'react';
 import Snippet from '../Snippet';
 import '../App.css';
 
-export default function ChatZone(props) {
+const ChatZone = (props) => {
   const history = props.chatItem;
 
   return (
@@ -15,3 +15,5 @@ export default function ChatZone(props) {
     </div>
   );
 }
+
+export default ChatZone

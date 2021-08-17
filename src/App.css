@@ -23,6 +23,29 @@
   flex: 1;
 }
 
+.chatWrapper {
+  width:100%;
+  display:flex;
+
+}
+
+.navigationWrapper {
+  border: 1px solid #afaaaa;
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+  background-color: #f7f7f7;
+
+  
+}
+
+.navigationCard {
+  height:50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .headerWrapper {
   background-color: #cccccc;
   height: 50px;

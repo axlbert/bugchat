@@ -1,12 +1,12 @@
 import React from 'react';
 import './App.css';
-import CommunicationZone from './components/CommunicationZone';
+import NavigationZone from './components/NavigationZone';
 
 function App() {
   return (
     <div className="App">
       <div className="mainContainer">
-        <CommunicationZone />
+        <NavigationZone />
       </div>
     </div>
   );

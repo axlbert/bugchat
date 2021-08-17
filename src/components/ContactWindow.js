@@ -3,11 +3,8 @@ import '../App.css';
 
 function ContactWindow() {
   return (
-    <div className="sideWrapper">
-
-      <div className="headerWrapper">
-        <span className="contactName">Dr. Rubberduck</span>
-      </div>
+    <div className="headerWrapper">
+      <span className="contactName">Dr. Rubberduck</span>
     </div>
   );
 }
