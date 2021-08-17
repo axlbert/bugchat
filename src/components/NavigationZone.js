@@ -18,6 +18,7 @@ const NavigationZone = () => {
     const updateChat = (state) => {
         let newChat = chats
         newChat[chatIndex].state = state
+        // console.log('update Chate', newChat, newChat[chatIndex])
         setChats(newChat)
     }
 
