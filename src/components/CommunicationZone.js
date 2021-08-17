@@ -15,6 +15,7 @@ const CommunicationZone = ({ propState, updateChat }) => {
   useEffect(() => {
     if (!!propState.history) {
       setState({ value: '', disposable: '', ...propState })
+      if (propState.history.length > 1) dialogueEngine()
     }
   }, [propState])
 
@@ -36,10 +37,9 @@ const CommunicationZone = ({ propState, updateChat }) => {
       };
       setState(newState);
       stateRef.current = newState;
-
       setTimeout(dialogueEngine, 3000);
-
-      updateChat(state)
+      updateChat(newState)
+      updateChat(newState)
     }
     cleanHistory();
 
