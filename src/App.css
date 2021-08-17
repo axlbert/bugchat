@@ -1,8 +1,12 @@
 .App {
   text-align: center;
   height: 100vh;
-  background: rgb(34,193,195);
-  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,0.29315476190476186) 100%);
+  background: rgb(34, 193, 195);
+  background: linear-gradient(
+    0deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(253, 187, 45, 0.29315476190476186) 100%
+  );
 }
 
 .root {
@@ -17,6 +21,30 @@
 .input {
   margin-left: 8px;
   flex: 1;
+}
+
+.chatWrapper {
+  width:100%;
+  display:flex;
+
+}
+
+.navigationWrapper {
+  border: 1px solid #afaaaa;
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+  background-color: #f7f7f7;
+
+  
+}
+
+.navigationCard {
+  height:50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
 
 .headerWrapper {
@@ -41,8 +69,6 @@
   width: fit-content;
 }
 
-
-
 .mainContainer {
   max-width: 500px;
   margin-left: auto;
@@ -50,11 +76,13 @@
   align-items: center;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  height: 100%;
 }
 .innerShadow {
   box-shadow: inset 0 0 3px #0000006e;
   background-color: #f7f7f7;
-  height: 80vh;
+  min-height: 80vh;
 }
 
 .chatWrap {

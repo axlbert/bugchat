@@ -1,10 +1,61 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Schmiede.ONE Bugchat challenge!
 
-## Available Scripts
+Welcome!
+
+This challenge is about an app that replicates one of the most sophisticated debugging methods: [rubber duck debugging](https://en.wikipedia.org/wiki/Rubber_duck_debugging).
+
+The app is a chatbot which responds to your messages but lets just say that the bot's level of intelligence isn't really production ready. Your job is to make the bot smarter.
+
+We **DO NOT** expect you to do all the tasks listed here. Just focus on the ones that support your application (as a frontend or backend developer).
+Focus on [task 2.1](#Tasks) if you're applying for a front-end position. Focus on [task 2.2](#Tasks) for backend positions.
+
+## Prerequisites:
+1. Clone with Git (gets you extra mana) or you can download as zip (boring...)
+    > If you prefer working with class based components, check out the branch [`master`](https://github.com/schmiedeone/bugchat)
+2. Node v10+
+
+## Tasks
+
+Here's a list of tasks that you can accomplish to make it cooler:
+
+1. Refactor and optimize the code where you see fit.
+2. Choose one of the following to focus on:
+    1. Have a list of other rubber ducks in a sidebar and have their chat history. (imagine whatsapp web, check attached picture for reference)
+   2. Write a REST API (using the technology of your choice) to serve the `dialogueEngine`. Make the bot fetch the answers from the API. Try to make the `dialogueEngine` ["smarter"](#Tips-for-making-it-smarter).
+        > An express server is setup inside of the server folder. You can use it if you want to.
+
+Lets go!
+
+![whatsapp screenshot](https://www.chip.de/ii/1/0/9/3/1/0/6/4/6/web_whatsapp-1d0159a68e13bb79.jpg)
+
+## Tips for making it smarter
+
+1. You can employ a public API from a service like Wikipedia or StackOverflow to get answers to questions typed in the chatbox.
+2. Come up with an algorithm to interpret text (e.g. keywords) and give relevant answers.
+
+---
+
+**NOTE**
+
+Node version 10 is required to run this app and higher versions cannot build the dependencies listed in the package.json.
+In case the app does not run on your version of node, you can [install nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+and add the node version to it.
+
+---
+
+## How to run the frontend
 
 In the project directory, you can run:
 
-### `npm start`
+```shell
+$ yarn start
+```
+
+OR
+
+```shell
+$ npm start
+```
 
 Runs the app in the development mode.<br>
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
@@ -12,57 +63,23 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.<br>
 You will also see any lint errors in the console.
 
-### `npm test`
+## How to run the backend
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+In the project directory, you can run:
 
-### `npm run build`
+```shell
+$ yarn start:express
+```
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+OR
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+```shell
+$ npm start:express
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+This runs the boilerplate express server we provided.
+The server should be available on [http://localhost:8000](http://localhost:8000).
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and the [create-express-app](https://github.com/wesleytodd/create-express-app) repo.
