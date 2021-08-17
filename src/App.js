@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import CommunicationZone from './CommunicationZone';
+import CommunicationZone from './components/CommunicationZone';
 
 function App() {
   return (
